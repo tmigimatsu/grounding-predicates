@@ -1,0 +1,66 @@
+---
+agent:
+  object: Agent
+  args:
+    # pos: [2, 8]
+    color: [255, 0, 0]
+
+hand:
+  object: Hand
+  args:
+    agent: agent
+
+room_a:
+  object: Location
+  args:
+    pos: [0, 0]
+    size: [5, 10]
+    color: [100, 100, 100]
+
+room_b:
+  object: Location
+  args:
+    pos: [5, 0]
+    size: [5, 10]
+    color: [100, 100, 100]
+
+door:
+  object: Door
+  args:
+    # pos: [5, 4]
+    color: [140, 70, 20]
+    lock:
+      object: Lock
+      args:
+        color: [255, 0, 0]
+
+chest:
+  object: Chest
+  args:
+    # pos: [8, 8]
+    color: [0, 255, 0]
+    lock:
+      object: Lock
+      args:
+        color: [255, 0, 0]
+
+door_key:
+  object: Key
+  args:
+    color: [140, 70, 20]
+    # color: [220, 200, 180]
+    # pos: [4, 6]
+
+chest_key:
+  object: Key
+  args:
+    color: [0, 255, 0]
+    # color: [180, 220, 180]
+    # pos: [2, 3]
+
+trophy:
+  object: Trophy
+  args:
+    # pos: [8, 8]
+    color: [255, 200, 0]
+...
